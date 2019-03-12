@@ -10,15 +10,17 @@
       Loaded="Page_Loaded">
 
     <Grid>
-        <TextBlock x:Name="TxtBl_Output" HorizontalAlignment="Left" Margin="484,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="102" Width="316" FontSize="72"/>
+        <TextBlock x:Name="TxtBl_Output" HorizontalAlignment="Left" Margin="212,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="528" FontSize="36" Text="Output"/>
         <Button x:Name="Btn_StartSimu" Click="Btn_StartSimu_Click" Content="Start Simulation" HorizontalAlignment="Left" Margin="535,372,0,0" VerticalAlignment="Top" Width="255" Height="68" FontSize="36"/>
-        <ListView HorizontalAlignment="Left" DataContext="{Binding Situation}" x:Name="LstVw_Situation" Height="430" Margin="10,10,0,0" VerticalAlignment="Top" Width="144">
+        <ListView HorizontalAlignment="Left" DataContext="{Binding Situation}" SelectionChanged="LstVw_Situation_SelectionChanged" x:Name="LstVw_Situation" Height="430" Margin="10,10,0,0" VerticalAlignment="Top" Width="144">
             <ListView.View>
                 <GridView>
                     <GridViewColumn DisplayMemberBinding="{Binding Sit_Name}"  Header="Name" />
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBox x:Name="TxtBx_Input" HorizontalAlignment="Left" Height="60" Margin="212,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322"/>
+        <Button x:Name="Btn_InputSent" Click="Btn_InputSent_Click"  Content="Sende Input" HorizontalAlignment="Left" Margin="212,230,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Page>
