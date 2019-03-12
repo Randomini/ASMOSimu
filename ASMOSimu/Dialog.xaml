@@ -1,0 +1,24 @@
+﻿<Page x:Class="ASMOSimu.Dialog"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ASMOSimu"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Dialog"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <TextBlock x:Name="TxtBl_Output" HorizontalAlignment="Left" Margin="484,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="102" Width="316" FontSize="72"/>
+        <Button x:Name="Btn_StartSimu" Click="Btn_StartSimu_Click" Content="Start Simulation" HorizontalAlignment="Left" Margin="535,372,0,0" VerticalAlignment="Top" Width="255" Height="68" FontSize="36"/>
+        <ListView HorizontalAlignment="Left" DataContext="{Binding Situation}" x:Name="LstVw_Situation" Height="430" Margin="10,10,0,0" VerticalAlignment="Top" Width="144">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Sit_Name}"  Header="Name" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+    </Grid>
+</Page>

@@ -1,0 +1,59 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ASMOSimu"
+      xmlns:Classes="clr-namespace:ASMOSimu.Classes" x:Class="ASMOSimu.CreateSituation"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateSituation"
+      Loaded="Page_Loaded">
+
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="32,29,0,0" TextWrapping="Wrap" Text="Sit_Name" VerticalAlignment="Top" Height="23" Width="69"/>
+        <TextBlock HorizontalAlignment="Left" Margin="32,57,0,0" TextWrapping="Wrap" Text="Sit_Info" VerticalAlignment="Top" Height="23" Width="69"/>
+        <TextBlock HorizontalAlignment="Left" Margin="226,28,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Height="23" Width="69"/>
+        <TextBlock HorizontalAlignment="Left" Margin="495,28,0,0" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" Height="23" Width="69"/>
+
+        <TextBox x:Name="txtBx_SituName" HorizontalAlignment="Left" Height="23" Margin="101,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtBx_SituInfo" HorizontalAlignment="Left" Height="24" Margin="101,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TxtBx_Output" HorizontalAlignment="Left" Height="22" Margin="283,29,0,0" VerticalAlignment="Top" Width="207"/>
+        <TextBox x:Name="TxtBx_Input" HorizontalAlignment="Left" Height="23" Margin="549,29,0,0" VerticalAlignment="Top" Width="206"/>
+        <ListView DataContext="{Binding Output}" SelectionChanged="LstVw_Output_SelectionChanged" x:Name="LstVw_Output" HorizontalAlignment="Left" Height="304" Margin="283,136,0,0" VerticalAlignment="Top" Width="207">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Output" DisplayMemberBinding="{Binding OutputText}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="Btn_SaveSitu" Content="Save" HorizontalAlignment="Left" Margin="147,111,0,0" VerticalAlignment="Top" Width="74" Click="Btn_SaveSitu_Click"/>
+        <Button x:Name="Btn_CreateSitu" Content="Create New" HorizontalAlignment="Left" Margin="32,111,0,0" VerticalAlignment="Top" Width="75" Click="Btn_CreateSitu_Click" RenderTransformOrigin="0.607,0.575"/>
+        <ListView DataContext="{Binding Situation}" SelectionChanged="LstVw_Name_SelectionChanged" x:Name="LstVw_Name" HorizontalAlignment="Left" Height="304" Margin="32,136,0,0" VerticalAlignment="Top" Width="189" Background="White">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Sit_Name}"  Header="Name" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Sit_Info}" Header="Info" />
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+        <Button x:Name="Btn_AddOut" Click="Btn_AddOut_Click" Content="Add New Output" HorizontalAlignment="Left" Margin="283,111,0,0" VerticalAlignment="Top" Width="107"/>
+        <ListView x:Name="LstVw_Input" DataContext="{Binding Input}" Height="304" Margin="549,136,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="206">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Input" DisplayMemberBinding="{Binding InputText}"/>
+                    <GridViewColumn Header="Next Situation" DisplayMemberBinding="{Binding Next_Situation}" />
+                    <GridViewColumn Header="Status" DisplayMemberBinding="{Binding Path=Istatus}" />
+
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button x:Name="Btn_AddIn" Click="Btn_AddIn_Click" Content="Add New Input" HorizontalAlignment="Left" Margin="549,111,0,0" VerticalAlignment="Top" Width="101"/>
+        <RadioButton x:Name="RdBtn_neut" Content="neutral" HorizontalAlignment="Left" Margin="549,58,0,0" VerticalAlignment="Top" Width="59" IsChecked="True"/>
+        <RadioButton x:Name="RdBtn_good" Content="good" HorizontalAlignment="Left" Margin="613,58,0,0" VerticalAlignment="Top" Width="59"/>
+        <RadioButton x:Name="RdBtn_bad" Content="bad" HorizontalAlignment="Left" Margin="677,58,0,0" VerticalAlignment="Top" Width="59" RenderTransformOrigin="0.415,0.5"/>
+        <TextBox x:Name="TxtBx_NxtSitu" HorizontalAlignment="Left" Height="23" Margin="552,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="203"/>
+        <TextBlock x:Name="TxtBl_NxtSitu" HorizontalAlignment="Left" Margin="495,83,0,0" TextWrapping="Wrap" Text="Next Situ" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
