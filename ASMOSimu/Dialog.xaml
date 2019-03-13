@@ -21,6 +21,7 @@
         </ListView>
         <TextBox x:Name="TxtBx_Input" HorizontalAlignment="Left" Height="60" Margin="212,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322"/>
         <Button x:Name="Btn_InputSent" Click="Btn_InputSent_Click"  Content="Sende Input" HorizontalAlignment="Left" Margin="212,230,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Btn_Stop" Click="Btn_Stop_Click" Content="Stop Simu" HorizontalAlignment="Left" Margin="196,406,0,0" VerticalAlignment="Top" Width="76"/>
 
     </Grid>
 </Page>
