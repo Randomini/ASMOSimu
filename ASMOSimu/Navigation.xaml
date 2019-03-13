@@ -1,0 +1,18 @@
+﻿<Page x:Class="ASMOSimu.Navigation"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ASMOSimu"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Navigation">
+
+    <Grid>
+        <Button x:Name="Btn_Dialog" Click="Btn_Dialog_Click" Content="Dialog" HorizontalAlignment="Left" Margin="42,52,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
+        <Button x:Name="Btn_PersInf" Click="Btn_PersInf_Click" Content="Person Info" HorizontalAlignment="Left" Margin="530,52,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
+        <Button x:Name="Btn_Speech" Click="Btn_Speech_Click" Content="Speech" HorizontalAlignment="Left" Margin="42,312,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
+        <Button x:Name="Btn_CreateSitu" Click="Btn_CreateSitu_Click" Content="Create Situ" HorizontalAlignment="Left" Margin="530,312,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
+
+    </Grid>
+</Page>

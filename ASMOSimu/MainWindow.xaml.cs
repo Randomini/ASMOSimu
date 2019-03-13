@@ -45,7 +45,6 @@ namespace ASMOSimu
             recEngine.LoadGrammarAsync(grammar);
             recEngine.SetInputToDefaultAudioDevice();
             recEngine.SpeechRecognized += RecEngine_SpeechRecognized;
-            
         }
 
         private void RecEngine_SpeechRecognized(object sender, SpeechRecognizedEventArgs e)
