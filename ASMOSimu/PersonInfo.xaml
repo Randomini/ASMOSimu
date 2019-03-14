@@ -10,25 +10,22 @@
       Loaded="Page_Loaded">
 
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,11,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="22" Width="81"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,38,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" Text="Vorname" VerticalAlignment="Top" Height="22" Width="81"/>
-        <Grid>
-            <TextBox x:Name="tBox_Nachname" HorizontalAlignment="Left" Height="23" Margin="96,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-            <TextBlock HorizontalAlignment="Left" Margin="10,11,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="22" Width="81"/>
-            <TextBox x:Name="tBox_Vorname" HorizontalAlignment="Left" Height="23" Margin="96,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBlock HorizontalAlignment="Left" Margin="10,67,0,0" TextWrapping="Wrap" Text="Spitzname" VerticalAlignment="Top" Height="22" Width="81"/>
-            <TextBox x:Name="tBox_Spitzname" HorizontalAlignment="Left" Height="23" Margin="96,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-            <TextBlock HorizontalAlignment="Left" Margin="10,94,0,0" TextWrapping="Wrap" Text="Geburtsdatum" VerticalAlignment="Top" Height="22" Width="81"/>
-            <DatePicker x:Name="date_Birthday" HorizontalAlignment="Left" Margin="96,94,0,0" VerticalAlignment="Top" Width="120" PreviewTextInput="DatePicker_PreviewTextInput"/>
-            <TextBlock HorizontalAlignment="Left" Margin="10,121,0,0" TextWrapping="Wrap" Text="Künstler/Bands" VerticalAlignment="Top" Height="22" Width="81"/>
-            <TextBox HorizontalAlignment="Left" Height="23" Margin="96,123,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-            <Button x:Name="btn_save" Content="Save" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="75" Click="btn_save_Click"/>
-            <RadioButton Content="Männlich" HorizontalAlignment="Left" Margin="231,12,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-            <RadioButton Content="Weiblich" HorizontalAlignment="Left" Margin="304,13,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked_1" IsChecked="True"/>
 
-        </Grid>
+        <TextBox x:Name="tBox_Nachname" HorizontalAlignment="Left" Height="23" Margin="96,43,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,44,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" Height="22" Width="81"/>
+        <TextBox x:Name="tBox_Vorname" HorizontalAlignment="Left" Height="23" Margin="96,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" Text="Spitzname" VerticalAlignment="Top" Height="22" Width="81"/>
+        <TextBox x:Name="tBox_Spitzname" HorizontalAlignment="Left" Height="23" Margin="96,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,127,0,0" TextWrapping="Wrap" Text="Geburtsdatum" VerticalAlignment="Top" Height="22" Width="81"/>
+        <DatePicker x:Name="date_Birthday" HorizontalAlignment="Left" Margin="96,127,0,0" VerticalAlignment="Top" Width="120" PreviewTextInput="DatePicker_PreviewTextInput"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="Künstler/Bands" VerticalAlignment="Top" Height="22" Width="81"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_save" Content="Save" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="75" Click="Btn_save_Click"/>
+        <RadioButton x:Name="RdBtn_Herr"  Content="Herr" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" />
+        <RadioButton x:Name="RdBtn_Frau"   Content="Frau" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" />
+        <TextBlock HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="Vorname" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="Anrede" VerticalAlignment="Top"/>
+
 
     </Grid>
 </Page>

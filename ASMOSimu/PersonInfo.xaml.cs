@@ -43,20 +43,22 @@ namespace ASMOSimu
             }
         }
 
-        private void btn_save_Click(object sender, RoutedEventArgs e)
+        private void Btn_save_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 Person person = new Person();
-                if(maleCheck == false)
-                {
-                    person.geschlecht = false;
-                } else
-                {
-                    person.geschlecht = true;
-                }
                 person.vorname = tBox_Vorname.Text;
                 person.nachname = tBox_Nachname.Text;
+                if (RdBtn_Herr.IsChecked == true)
+                {
+                    person.Anrede = "Herr " + person.nachname;
+                }
+                else
+                {
+                    person.Anrede = "Frau " + person.nachname;
+                }
+
                 person.spitzname = tBox_Spitzname.Text;
                 person.birthday = date_Birthday.SelectedDate.Value.Date;
                 lst_Person.Add(person);
@@ -74,20 +76,11 @@ namespace ASMOSimu
             if (myFile.Exists)
             {
                 Load.Loaddata(lst_Person, "Bewohner.xml");
-                
             }
-            
-
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            maleCheck = true;
-        }
+     
 
-        private void RadioButton_Checked_1(object sender, RoutedEventArgs e)
-        {
-            maleCheck = false;
-        }
+     
     }
 }

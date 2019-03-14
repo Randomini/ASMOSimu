@@ -42,6 +42,7 @@ namespace ASMOSimu
 
         private void Btn_Speech_Click(object sender, RoutedEventArgs e)
         {
+            this.NavigationService.Navigate(new Uri("SpeechSimu.xaml", UriKind.Relative));
 
         }
     }
