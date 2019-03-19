@@ -13,6 +13,7 @@
         <Button x:Name="Btn_PersInf" Click="Btn_PersInf_Click" Content="Person Info" HorizontalAlignment="Left" Margin="530,52,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
         <Button x:Name="Btn_Speech" Click="Btn_Speech_Click" Content="Speech" HorizontalAlignment="Left" Margin="42,312,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
         <Button x:Name="Btn_CreateSitu" Click="Btn_CreateSitu_Click" Content="Create Situ" HorizontalAlignment="Left" Margin="530,312,0,0" VerticalAlignment="Top" Width="212" Height="80"/>
+        <Button x:Name="Btn_Media" Content="Media Control" HorizontalAlignment="Left" Margin="280,168,0,0" VerticalAlignment="Top" Width="214" Height="94" Click="Btn_Media_Click"/>
 
     </Grid>
 </Page>

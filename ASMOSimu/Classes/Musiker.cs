@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace ASMOSimu.Classes
 {
-     class Musiker
+     public class Musiker
     {
-        public string name;
-        public List<Uri> ytLinks;
+        public string MusikerName { get; set; }
+        public List<string> ytLinks; 
+
+        public Musiker(string name)
+        {
+            MusikerName = name;
+            ytLinks = new List<string>();
+        }
+
+        public Musiker()
+        {
+
+        }
     }
 }

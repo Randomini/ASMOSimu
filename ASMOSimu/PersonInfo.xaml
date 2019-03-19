@@ -18,13 +18,21 @@
         <TextBox x:Name="tBox_Spitzname" HorizontalAlignment="Left" Height="23" Margin="96,99,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,127,0,0" TextWrapping="Wrap" Text="Geburtsdatum" VerticalAlignment="Top" Height="22" Width="81"/>
         <DatePicker x:Name="date_Birthday" HorizontalAlignment="Left" Margin="96,127,0,0" VerticalAlignment="Top" Width="120" PreviewTextInput="DatePicker_PreviewTextInput"/>
-        <TextBlock HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="Künstler/Bands" VerticalAlignment="Top" Height="22" Width="81"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="96,156,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,154,0,0" TextWrapping="Wrap" Text="Musiker/Bands" VerticalAlignment="Top" Height="22" Width="81"/>
+        <TextBox x:Name="TxtBx_Musiker" HorizontalAlignment="Left" Height="23" Margin="96,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btn_save" Content="Save" HorizontalAlignment="Left" Margin="10,235,0,0" VerticalAlignment="Top" Width="75" Click="Btn_save_Click"/>
         <RadioButton x:Name="RdBtn_Herr"  Content="Herr" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" />
         <RadioButton x:Name="RdBtn_Frau"   Content="Frau" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" />
         <TextBlock HorizontalAlignment="Left" Margin="10,71,0,0" TextWrapping="Wrap" Text="Vorname" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" Text="Anrede" VerticalAlignment="Top"/>
+        <Button x:Name="Btn_AddMusiker" Content="Add Musiker" HorizontalAlignment="Left" Margin="233,159,0,0" VerticalAlignment="Top" Width="75" Click="Btn_AddMusiker_Click"/>
+        <ListView x:Name="LstVw_Musiker" HorizontalAlignment="Left" Height="133" Margin="397,43,0,0" VerticalAlignment="Top" Width="100">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
 
 
     </Grid>

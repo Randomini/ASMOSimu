@@ -61,7 +61,7 @@ namespace ASMOSimu
             }
 
             LstVw_Name.ItemsSource = lst_situ;
-
+            
         }
 
         private void Btn_AddOut_Click(object sender, RoutedEventArgs e)

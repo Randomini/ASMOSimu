@@ -25,6 +25,7 @@ namespace ASMOSimu
     {
         public static List<Person> lst_Person = new List<Person>();
         public bool maleCheck = false ;
+        public List<string> Lst_musikerNeu = new List<string>();
         public PersonInfo()
         {
             InitializeComponent();
@@ -61,13 +62,14 @@ namespace ASMOSimu
 
                 person.spitzname = tBox_Spitzname.Text;
                 person.birthday = date_Birthday.SelectedDate.Value.Date;
+                person.Lst_MusikerString = Lst_musikerNeu;
                 lst_Person.Add(person);
                 Save.Savedata(lst_Person, "Bewohner" + ".xml");
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
         }
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
@@ -79,8 +81,12 @@ namespace ASMOSimu
             }
         }
 
-     
+    
 
-     
+        private void Btn_AddMusiker_Click(object sender, RoutedEventArgs e)
+        {
+            Lst_musikerNeu.Add(TxtBx_Musiker.Text);
+            TxtBx_Musiker.Text = "";
+        }
     }
 }

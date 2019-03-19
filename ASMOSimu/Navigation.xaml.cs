@@ -45,5 +45,10 @@ namespace ASMOSimu
             this.NavigationService.Navigate(new Uri("SpeechSimu.xaml", UriKind.Relative));
 
         }
+
+        private void Btn_Media_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new Uri("MediaControl.xaml", UriKind.Relative));
+        }
     }
 }

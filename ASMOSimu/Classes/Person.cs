@@ -14,6 +14,7 @@ namespace ASMOSimu.Classes
         public string vorname;
         public string nachname;
         public string spitzname;
+        public List<string> Lst_MusikerString;
         
        // public bool geschlecht; // wenn false weiblich wenn true männlcih
                                 // public List<Musiker> musikFav;
