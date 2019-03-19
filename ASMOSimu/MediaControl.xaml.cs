@@ -1,19 +1,8 @@
 ﻿using ASMOSimu.Classes;
-using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace ASMOSimu
 {
@@ -43,9 +32,12 @@ namespace ASMOSimu
         private void Btn_Add_Link_Click(object sender, RoutedEventArgs e)
         {
             musikerCurrent = (Musiker)LstVw_Künstler.SelectedItem;
-            musikerCurrent.ytLinks.Add(TxtBx_Links.Text);
-           // lst_media.Add(musikerCurrent);
+            YoutubeLink youtubeLink = new YoutubeLink(TxtBx_LinkName.Text, TxtBx_Links.Text);
+            musikerCurrent.ytLinks.Add(youtubeLink);
+            // lst_media.Add(musikerCurrent);
+            
             TxtBx_Links.Text = "";
+            TxtBx_LinkName.Text = "";
             LstVw_Links.Items.Refresh();
         }
 

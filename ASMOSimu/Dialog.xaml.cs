@@ -73,7 +73,7 @@ namespace ASMOSimu
                     break;
 
                 case "print my name":
-                   // txtB_output.Text = "Luca";
+                    // txtB_output.Text = "Luca";
                     break;
             }
         }
@@ -85,11 +85,11 @@ namespace ASMOSimu
 
         private void Btn_InputSent_Click(object sender, RoutedEventArgs e)
         {
-            foreach(Input x in currentout.lst_inputs)
+            foreach (Input x in currentout.lst_inputs)
             {
                 if (TxtBx_Input.Text.Contains(x.InputText))
                 {
-                    foreach(Situation y in CreateSituation.lst_situ)
+                    foreach (Situation y in CreateSituation.lst_situ)
                     {
                         if (y.Sit_Name.Equals(x.Next_Situation))
                         {

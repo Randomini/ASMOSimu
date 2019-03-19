@@ -56,6 +56,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Classes\LoadMedia.cs" />
+    <Compile Include="Classes\YoutubeLink.cs" />
     <Compile Include="MediaControl.xaml.cs">
       <DependentUpon>MediaControl.xaml</DependentUpon>
     </Compile>

@@ -1,20 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace ASMOSimu.Classes
 {
-     public class Musiker
+    public class Musiker
     {
         public string MusikerName { get; set; }
-        public List<string> ytLinks; 
+        public List<YoutubeLink> ytLinks; 
 
         public Musiker(string name)
         {
             MusikerName = name;
-            ytLinks = new List<string>();
+            ytLinks = new List<YoutubeLink>();
         }
 
         public Musiker()
